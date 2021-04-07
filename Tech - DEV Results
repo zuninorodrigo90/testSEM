@@ -1,0 +1,31 @@
+1. C
+2. A
+3. C
+4. B
+5. A
+6. A
+7. D (Puede ser ambigua, de todos los errores y exceptiones es Throwable, de excepciones checked y unchecked es Exception)
+8. A
+9. 
+
+ public static void main(String[] args) {
+        List<Employee> employees = createEmployeeList();
+        //Usando Collectors (requerido por el enunciado)
+        employees.stream().map(n -> n.getName().concat(", ")).collect(Collectors.toList()).forEach(System.out::print);
+        //Sin usar Collectors (misma salida):
+        employees.stream().map(n -> n.getName().concat(", ")).forEach(System.out::print);
+    }
+
+
+10.
+a. Estructura de datos utilizada: Stack
+Utilicé Stack para aprovechar la funcionalidad de la misma, utlizando sus dos métodos principales que son
+pop() y push(). De esta forma, con el uso de ellos, el programa es más eficiente, ya que a medida que voy
+iterando el array de entrada con los valores, puedo ir construyendo el Stack e imprimiendo la salida deseada
+
+b. La complejidad de esta resolución es O(n). Tiene una complejidad lineal (depende del número de
+entradas que posea el array, es decir es proporcional a la cantidad de elementos de entrada).
+Respecto a si se podría mejorar, honestamente pensé para este problema dos soluciones, una es la final
+que dejé en el repositorio y la otra solución fue la primera que se me ocurrió que es la de hacer una iteración
+con dos loops, es decir un loop externo que toma los elementos del array y un loop interno que va comparando cada
+uno de los elementos siguientes, por lo cual la complejidad temporal va a ser mayor que la solución que les dejé.

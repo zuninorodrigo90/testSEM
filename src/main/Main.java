@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
-        int vec[] = {11, 13, 21, 3};
+        int vec[] = {13, 7, 6, 12};
         printSEM(vec);
     }
 
