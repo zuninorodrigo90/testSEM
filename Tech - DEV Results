@@ -4,7 +4,7 @@
 4. B
 5. A
 6. A
-7. D (Puede ser ambigua, de todos los errores y exceptiones es Throwable, de excepciones checked y unchecked es Exception)
+7. D (Puede ser ambigua, de todos los errores y excepciones es Throwable, de excepciones checked y unchecked es Exception)
 8. A
 9. 
 
